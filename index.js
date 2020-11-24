@@ -6,8 +6,8 @@ const BotName = '🤖BOT🤖'; // Nama Bot Whatsapp
 const instagramlu = 'https://instagram.com/kreasi.editing_official'; // Nama Instagramlu cok
 const whatsapplu = 'Wa.me/+6287848115476'; // Nomor whatsapplu cok
 const kapanbotaktif = 'Ketika Hanya Di Aktifkan'; // Kapan bot lu aktif
-const grupch1 = 'https://chat.whatsapp.com/HRyCdRrYnme7fTegBYWDjp'; // OFFICIAL GRUP LU 1
-const grupch2 = 'https://chat.whatsapp.com/I0Gkm2iSNp22CtXAhMqplW'; // OFFICIAL GRUP LU 2
+const grupch1 = 'https://chat.whatsapp.com/I0Gkm2iSNp22CtXAhMqplW'; // OFFICIAL GRUP LU 1
+const grupch2 = 'https://chat.whatsapp.com/HRyCdRrYnme7fTegBYWDjp'; // OFFICIAL GRUP LU 2
 const grupch3 = 'https://www.instagram.com/kreasi.editing_official/'; // OFFICIAL GRUP LU 3
 //
 const qrcode = require("qrcode-terminal");
