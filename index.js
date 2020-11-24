@@ -1,14 +1,14 @@
 /*
-* "Gunakan BOT Dengan Bijak bro!!!"
-* (Scriptnya MIMIM Creator).
+* "Jangan modal nama doang bro!!!"
+* (Scriptnya Aris187 ID).
 */
-const BotName = '🤖BOT🤖'; // Nama Bot Whatsapp
-const instagramlu = 'https://instagram.com/kreasi.editing_official'; // Nama Instagramlu cok
-const whatsapplu = 'Wa.me/+6287848115476'; // Nomor whatsapplu cok
-const kapanbotaktif = 'Ketika Hanya Di Aktifkan'; // Kapan bot lu aktif
-const grupch1 = 'https://chat.whatsapp.com/I0Gkm2iSNp22CtXAhMqplW'; // OFFICIAL GRUP LU 1
-const grupch2 = 'https://chat.whatsapp.com/HRyCdRrYnme7fTegBYWDjp'; // OFFICIAL GRUP LU 2
-const grupch3 = 'https://www.instagram.com/kreasi.editing_official/'; // OFFICIAL GRUP LU 3
+const BotName = '🤖AR15BOT🤖'; // Nama Bot Whatsapp
+const instagramlu = 'https://instagram.com/_sadboy.ig'; // Nama Instagramlu cok
+const whatsapplu = 'Wa.me/+6285722553839'; // Nomor whatsapplu cok
+const kapanbotaktif = '24 Jam'; // Kapan bot lu aktif
+const grupch1 = 'https://chat.whatsapp.com/GU6NsgZvfgw37vrjIxUPhP'; // OFFICIAL GRUP LU 1
+const grupch2 = 'https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg'; // OFFICIAL GRUP LU 2
+const grupch3 = 'https://instagram.com/_sadboy.ig'; // OFFICIAL GRUP LU 3
 //
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
@@ -53,7 +53,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] MIMIM redy scan sekarang!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] AR15BOT redy scan sekarang!`);
 });
 
 conn.on('credentials-updated', () =>
@@ -72,7 +72,7 @@ conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @kreasi.editing_official`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @_sadboy.ig`)
 })
 
 conn.on('message-new', async(m) =>
@@ -799,7 +799,7 @@ if (text.includes("$alay")){
 	})
 }
 
-//Tolonglah bro jangan di ubah ubah MIMIM Creator
+//Tolonglah bro jangan di ubah ubah Aris187 ID
 
 
 })
