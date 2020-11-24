@@ -69,7 +69,7 @@ Ket: Aktiv 24 jam
 BOT INI KHUSUS HP/TERMUX DOANG YAH,JIKA MAU RE-UPLOAD CANTUMKAN NAMA SAYA (MIMIM Creator)
 
 ## Sosial Media Admin
-
 * [`Instagram Admin`](https://instagram.com/kreasi.editing_official)
-* [`WhatsApp Admin `](https://wa.me/+6285722553839)
+* [`WhatsApp Admin `](https://wa.me/+6287848115476
+
 
