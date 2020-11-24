@@ -70,6 +70,6 @@ BOT INI KHUSUS HP/TERMUX DOANG YAH,JIKA MAU RE-UPLOAD CANTUMKAN NAMA SAYA (MIMIM
 
 ## Sosial Media Admin
 * [`Instagram Admin`](https://instagram.com/kreasi.editing_official)
-* [`WhatsApp Admin `](https://wa.me/+6287848115476
+* [`WhatsApp Admin `](https://wa.me/+6287848115476)
 
 
