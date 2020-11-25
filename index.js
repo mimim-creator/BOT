@@ -85,9 +85,9 @@ conn.on('message-new', async(m) =>
    console.log(`[ ${moment().format("HH:mm:ss")} ] => Nomor: [ ${id.split("@s.whatsapp.net")[0]} ] => ${text}`);
    // Groups
 
-if (text.includes(".buatgrup"))
+if (text.includes("!buatgrup"))
    {
-var nama = text.split(".buatgrup")[1].split("-nomor")[0];
+var nama = text.split("!buatgrup")[1].split("-nomor")[0];
 var nom = text.split("-nomor")[1];
 var numArray = nom.split(",");
 for ( var i = 0; i < numArray.length; i++ ) {
@@ -102,8 +102,8 @@ conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say h
 }
 
 // FF MIMIM CREATOR
-if(text.includes(".cek")){
-var num = text.replace(/.cek/ , "")
+if(text.includes("!cek")){
+var num = text.replace(/!cek/ , "")
 var idn = num.replace("0","+62");
 
 console.log(id);
