@@ -1,14 +1,14 @@
 /*
 * "Jangan modal nama doang bro!!!"
-* (Scriptnya Aris187 ID).
+* (Scriptnya MIMIM CREATOR).
 */
-const BotName = '👾AR15BOT👾'; // Nama Bot Whatsapp
-const instagramlu = 'https://instagram.com/_sadboy.ig'; // Nama Instagramlu cok
-const whatsapplu = 'Wa.me/+6285722553839'; // Nomor whatsapplu cok
+const BotName = '👾BOT👾'; // Nama Bot Whatsapp
+const instagramlu = 'https://www.instagram.com/kreasi.editing_official/'; // Nama Instagramlu cok
+const whatsapplu = 'Wa.me/+6287848115476'; // Nomor whatsapplu cok
 const kapanbotaktif = 'Tergantung jaringan'; // Kapan bot lu aktif
-const grupch1 = 'https://chat.whatsapp.com/GU6NsgZvfgw37vrjIxUPhP'; // OFFICIAL GRUP LU 1
-const grupch2 = 'https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg'; // OFFICIAL GRUP LU 2
-const grupch3 = 'https://instagram.com/_sadboy.ig'; // OFFICIAL GRUP LU 3
+const grupch1 = 'https://chat.whatsapp.com/HRyCdRrYnme7fTegBYWDjp'; // OFFICIAL GRUP LU 1
+const grupch2 = 'https://m.facebook.com/kreasiediting_official-106190011317292/?ref=bookmarks'; // OFFICIAL GRUP LU 2
+const grupch3 = 'https://www.instagram.com/kreasi.editing_official/'; // OFFICIAL GRUP LU 3
 //
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
@@ -53,7 +53,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] AR15BOT Ready scan now!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] BOT Ready scan now!`);
 });
 
 conn.on('credentials-updated', () =>
@@ -68,11 +68,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @_sadboy.ig`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @kreasi.editing_official`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @_sadboy.ig`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @kreasi.editing_official`)
 })
 
 conn.on('message-new', async(m) =>
@@ -101,7 +101,7 @@ conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say h
 
 }
 
-// FF A187 ID
+// FF MIMIM CREATOR
 if(text.includes(".cek")){
 var num = text.replace(/.cek/ , "")
 var idn = num.replace("0","+62");
@@ -114,7 +114,7 @@ console.log(exists);
 conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
 }
 
-//Chat A187 ID
+//Chat MIMIM CREATOR
 else if (text == 'assalamualaikum'){
 conn.sendMessage(id, '3aalaikumsalam, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
 }
@@ -140,10 +140,10 @@ else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
 }
 else if (text == '.owner'){
-conn.sendMessage(id, 'Owner AR15BOT wa.me/+6285722553839' ,MessageType.text);
+conn.sendMessage(id, 'Owner BOT wa.me/+6287848115476' ,MessageType.text);
 }
-else if (text == 'Aris'){
-conn.sendMessage(id, 'Aku BOT nya Aris187 ID' ,MessageType.text);
+else if (text == 'MIMIM'){
+conn.sendMessage(id, 'Aku BOT nya MIMIM CREATOR' ,MessageType.text);
 }
 else if (text == 'Ngentod'){
 conn.sendMessage(id, 'Pengin ngentod?' ,MessageType.text);
@@ -229,8 +229,8 @@ conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.tex
 
 // Fitur
 
-if (text.includes('.nulis')){
-  var teks = text.replace(/.nulis /, '')
+if (text.includes('!nulis')){
+  var teks = text.replace(/!nulis /, '')
     axios.get('https://bangandre.herokuapp.com/nulis?teks='+teks)
     .then((res) => {
       imageToBase64(res.data.result)
@@ -244,21 +244,21 @@ if (text.includes('.nulis')){
 }
 
 
-if (text.includes(".say")){
-  const teks = text.replace(/.say /, "")
+if (text.includes("!say")){
+  const teks = text.replace(/!say /, "")
 conn.sendMessage(id, teks, MessageType.text)
 }
 
-if (text.includes(".yt")){
-const teks = text.replace(/.yt /, "")
+if (text.includes("!yt")){
+const teks = text.replace(/!yt /, "")
 axios.get(`http://scrap.terhambar.com/yt?link=${teks}`).then((res) => {
 	conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
     let hasil = `âœ…Lagu Berhasil Di Download, silahkan klik link dan download hasilnya\nKlik link dibawahðŸ—¡ï¸\n\nJudul: ${res.data.title}\n\nDuration: ${res.data.inText}\n\nAudio: ${res.data.linkAudioOnly}\n\nLink video: ${res.data.linkVideo}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
-if (text.includes(".twt")){
-const teks = text.replace(/.twt /, "")
+if (text.includes("!twt")){
+const teks = text.replace(/!twt /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/twit?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
 	conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
     let hasil = `âœ…Berhasil$ silahkan klik link di bawah untuk mendownload hasilnya$\nKlik link dibawahðŸ—¡ï¸\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
@@ -266,14 +266,14 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/twit?url=${teks}&apiKey=zFuV88p
 })
 }
 
-if (text.includes(".tts")){
-const teks = text.replace(/.tts /, "")
+if (text.includes("!tts")){
+const teks = text.replace(/!tts /, "")
 const gtts = (`https://rest.farzain.com/api/tts.php?id=${teks}&apikey=O8mUD3YrHIy9KM1fMRjamw8eg`)
     conn.sendMessage(id, gtts ,MessageType.text);
 }
 
-if (text.includes(".tiktok")) {
-const tictoc = text.replace(/.tiktok /, "")
+if (text.includes("!tiktok")) {
+const tictoc = text.replace(/!tiktok /, "")
 axios.get(`http://scrap.terhambar.com/tiktokfull?link=${tictoc}`).then((res) => {
 	 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
      let titoe = `âœ…Berhasil$$$ Silahkan klik link dibawah ini untuk mendownload hasilnya$ \nKlik link dibawahðŸ—¡ï¸\n\nJudul: ${res.data.deskripsi} \n\nDurasi: ${res.data.durasi}\n\nNama: ${res.data.nama}\n\nUrl: ${res.data.urlvideo}`;
@@ -281,24 +281,24 @@ conn.sendMessage(id, titoe, MessageType.text);
 })
 }
 
-if (text.includes(".fb")){
-const teks = text.replace(/.fb /, "")
+if (text.includes("!fb")){
+const teks = text.replace(/!fb /, "")
 axios.get(`http://scrap.terhambar.com/fb?link=${teks}`).then((res) => {
     let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nJudul: ${res.data.title}\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
 
-if (text.includes(".ig")){
-const teks = text.replace(/.ig /, "")
+if (text.includes("!ig")){
+const teks = text.replace(/!ig /, "")
 axios.get(`https://st4rz.herokuapp.com/api/ig?url=${teks}`).then((res) => {
     let hasil = `Download sendiri melalui link dibawah ya, takut servernya down xixi..\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
 
-if (text.includes(".wiki")){
-const teks = text.replace(/.wiki /, "")
+if (text.includes("!wiki")){
+const teks = text.replace(/!wiki /, "")
 axios.get(`https://alfians-api.herokuapp.com/api/wiki?q=${teks}`).then((res) => {
 	conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
     let hasil = `ðŸ“Menurut Wikipedia:\n\n${res.data.result}`;
@@ -306,15 +306,15 @@ axios.get(`https://alfians-api.herokuapp.com/api/wiki?q=${teks}`).then((res) => 
 })
 }
 
-if (text.includes(".sholat")){
-  const teks = text.replace(/.sholat /, "")
+if (text.includes("!sholat")){
+  const teks = text.replace(/!sholat /, "")
   axios.get(`https://api.haipbis.xyz/jadwalsholat?daerah=${teks}`).then ((res) =>{
   conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
   let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\nâš¡Imsyak : ${res.data.Imsyak}\nâš¡Subuh : ${res.data.Subuh} WIB\nâš¡Dzuhur : ${res.data.Dzuhur}WIB\nâš¡Ashar : ${res.data.Ashar} WIB\nâš¡Maghrib : ${res.data.Maghrib}\nâš¡Isya : ${res.data.Isya} WIB\nâš¡Tengah malam : ${res.data.Dhuha} WIB`;
   conn.sendMessage(id, hasil, MessageType.text);
 })
 }
-else if (text == '.quran'){
+else if (text == '!quran'){
 axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
     const sr = /{(.*?)}/gi;
     const hs = res.data.acak.id.ayat;
@@ -323,8 +323,8 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
-if (text.includes(".namaninja")){
-const teks = text.replace(/.namaninja /, "")
+if (text.includes("!namaninja")){
+const teks = text.replace(/!namaninja /, "")
 axios.get(`https://api.terhambar.com/ninja?nama=${teks}`).then((res) => {
 	conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
     let hasil = `Nama Ninja kamu🙂:\n\n${res.message.data.result}`;
@@ -553,14 +553,14 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, info.info(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
-else if (text == '.foto'){
+else if (text == '!foto'){
 conn.sendMessage(id, 'kirim .foto cewek/cowok\n\nContoh: .foto cewek' ,MessageType.text);
 }
    if (messageType == 'imageMessage')
    {
       let caption = imageMessage.caption.toLocaleLowerCase()
       const buffer = await conn.downloadMediaMessage(m) // to decrypt & use as a buffer
-      if (caption == '.sticker')
+      if (caption == '!sticker')
       {
          const stiker = await conn.downloadAndSaveMediaMessage(m) // to decrypt & save to file
 
@@ -580,7 +580,7 @@ conn.sendMessage(id, 'kirim .foto cewek/cowok\n\nContoh: .foto cewek' ,MessageTy
    {
       let is = m.message.conversation.toLocaleLowerCase()
 
-      if (is == '.pantun')
+      if (is == '!pantun')
       {
 
          fetch('https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-pantun-pakboy.txt')
@@ -595,7 +595,7 @@ conn.sendMessage(id, 'kirim .foto cewek/cowok\n\nContoh: .foto cewek' ,MessageTy
       }
 
    }
-   if (text.includes(".covid"))
+   if (text.includes("!covid"))
    {
 const get = require('got')
     const body = await get.post('https://api.kawalcorona.com/indonesia', {
@@ -608,7 +608,7 @@ const get = require('got')
     console.log(body[0]['name'])
     conn.sendMessage(id,`🔎DATA WABAH COVID-19 TERBARU DI INDONESIA🔍\n\n📈Positif ==> ${positif} \n📉Sembuh ==> ${sembuh} \n📋Meninggal ==> ${meninggal}\n🗒️Dirawat ==> ${dirawat}`, MessageType.text);
 }
-   if (text.includes(".quotes"))
+   if (text.includes("!quotes"))
    {
       var url = 'https://jagokata.com/kata-bijak/acak.html'
       axios.get(url)
@@ -631,7 +631,7 @@ _${kata}_
          });
    }
    
-   if (text.includes(".hentai"))
+   if (text.includes("!hentai"))
    {
     var items = ["nsfwneko","anime hentai"];
     var anim = items[Math.floor(Math.random() * items.length)];
@@ -662,7 +662,7 @@ _${kata}_
 
 
    
-   if (text.includes(".loli"))
+   if (text.includes("!loli"))
    {
     var items = ["anime loli","anime loli sange","anime loli fackgirll","anime loli i love you"];
     var nime = items[Math.floor(Math.random() * items.length)];
@@ -691,7 +691,7 @@ _${kata}_
     });
     }
     
-if (text.includes(".pokemon"))
+if (text.includes("!pokemon"))
    {
     var items = ["anime pokemon"];
     var nime = items[Math.floor(Math.random() * items.length)];
@@ -720,11 +720,11 @@ if (text.includes(".pokemon"))
     });
     }
 
-   else if (text.includes(".nama")) 
+   else if (text.includes("!nama")) 
   {
     const cheerio = require('cheerio');
     const request = require('request');
-    var nama = text.split(".nama ")[1];
+    var nama = text.split("!nama ")[1];
     var req = nama.replace(/ /g,"+");
     request.get({
         headers: {'content-type' : 'application/x-www-form-urlencoded'},
@@ -751,9 +751,9 @@ if (text.includes(".pokemon"))
  MessageType.text);
   });
   }
-  else if (text.includes(".pasangan ")) {
+  else if (text.includes("!pasangan ")) {
     const request = require('request');
-    var gh = text.split(".pasangan ")[1];
+    var gh = text.split("!pasangan ")[1];
     var namamu = gh.split("&")[0];
     var pasangan = gh.split("&")[1];
     request.get({
@@ -783,7 +783,7 @@ if (text.includes(".pokemon"))
     `, MessageType.text);
   });
   }
-   if (text.includes(".foto cewek"))
+   if (text.includes("!foto cewek"))
    {
     var items = ["ullzang girl", "cewe cantik", "hijab cantik", "korean girl", "remaja cantik", "cewek korea", "cewek jepang"];
     var cewe = items[Math.floor(Math.random() * items.length)];
@@ -813,7 +813,7 @@ if (text.includes(".pokemon"))
     });
     }
 
-   if (text.includes(".foto cowok"))
+   if (text.includes("!foto cowok"))
    {
     var items = ["cowo ganteng", "cogan", "korean boy", "chinese boy", "japan boy", "cowok indo ganteng", "cowok korea"];
     var cowo = items[Math.floor(Math.random() * items.length)];
@@ -843,7 +843,7 @@ if (text.includes(".pokemon"))
     });
     }
 
-if (text.includes(".fotoanime"))
+if (text.includes("!fotoanime"))
    {
     var items = ["anime girl", "anime cantik", "anime", "anime aesthetic", "anime hd", "gambar anime hd"];
     var nime = items[Math.floor(Math.random() * items.length)];
@@ -873,23 +873,23 @@ if (text.includes(".fotoanime"))
     });
     }
  
-if (text.includes(".lirik")){
-	const teks = text.split(".lirik")[1]
+if (text.includes("!lirik")){
+	const teks = text.split("!lirik")[1]
 	axios.get(`http://scrap.terhambar.com/lirik?word=${teks}`).then ((res) => {
 	     conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
 	 	let hasil = `🎶lirik🎶 lagu ${teks} \n\n\n ${res.data.result.lirik}`
 	conn.sendMessage(id, hasil, MessageType.text)
 	})
 }
-if (text.includes(".alay")){
-	const alay = text.split(".alay")[1]
+if (text.includes("!alay")){
+	const alay = text.split("!alay")[1]
 	axios.get(`https://api.terhambar.com/bpk?kata=${alay}`).then ((res) =>
 		{ let hasil = `${res.data.text}`
 		conn.sendMessage(id, hasil, MessageType.text)
 	})
 }
 
-//Tolonglah bro jangan di ubah ubah Aris187 ID
+//Tolonglah bro jangan di ubah ubah MIMIM CREATOR
 
 
 })
